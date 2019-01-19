@@ -53,7 +53,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  color: #292929;
+  color: #FCCE50;
   font-weight: 600;
 }
 
@@ -64,7 +64,7 @@ h4 {
 }
 
 a {
-  color: #292929;
+  color: #fff;
   text-decoration: none !important;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
@@ -73,17 +73,34 @@ a {
   transition: all 0.5s ease-in-out 0s;
 }
 
+
+:root {
+  --mainColor: #FCCE50;
+}
+
+.squiggle a {
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+	background-position: 0 100%;
+	background-repeat: repeat-x;
+	background-size: 3px 3px;
+  color: #E5A800;
+  text-decoration: none;
+}
+
+.squiggle a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .6s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23E5A800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+}
+
 a:hover {
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
   -o-transition: all 0.5s ease-in-out 0s;
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
-}
-
-a:hover, a:focus {
-  color: #b8a07e;
-  text-decoration: underline;
 }
 
 nav ul li a {
@@ -103,12 +120,19 @@ nav ul li a {
   transition: all 0.5s ease-in-out 0s;
 }
 
+.footertext{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #E5A800;
+}
+
 p {
   margin: 25px 0;
   padding: 0;
-  font-size: 15px;
-  color: #999999;
-  line-height: 28px;
+  font-size: 16px;
+  color: #000;
+  line-height: 30px;
 }
 
 ::-moz-selection {
@@ -229,7 +253,7 @@ nav ul li a {
   display: block;
   font-size: 16px;
   font-family: 'Poppins', helvetica;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 16px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
@@ -258,7 +282,7 @@ nav ul li a:hover {
 }
 
 .active {
-  color: #afafaf;
+  color: #fff;
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -285,7 +309,6 @@ nav ul li a:hover {
   font-size: 40px;
   font-weight: 700;
   margin-bottom: 10px;
-  text-transform: lowercase;
   color: #fff;
 }
 
@@ -294,9 +317,19 @@ nav ul li a:hover {
   letter-spacing: 5px;
   margin-top: 0;
   margin-bottom: 30px;
-  text-transform: capitalize;
+  text-transform: none;
   color: #fff;
   font-weight: 500;
+}
+
+.header-content .about-descr .separator{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #E5A800;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    max-width: 60%;
 }
 
 .header-content .list-social li {
@@ -319,25 +352,11 @@ nav ul li a:hover {
 /*  Aout-us
 /*-----------------------------------------------------------------------------------*/
 
-#about {
+/*#about {
   width: 100%;
   height: auto;
   background: #f7f7f7;
-  padding-top: 190px;
-}
-
-#about .div-img-bg {
-  padding-bottom: 30px;
-  border: 20px solid #b8a07e;
-}
-
-#about .div-img-bg .about-img img {
-  width: 100%;
-  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
-  margin-top: -60px;
-  margin-left: 40px;
-  height: 400px;
-  object-fit: cover;
+  padding-top: 150px;
 }
 
 #about .about-descr .p-heading {
@@ -347,16 +366,19 @@ nav ul li a:hover {
 }
 
 #about .about-descr .separator {
-  max-width: 80%;
-  margin-bottom: 0;
   text-align: left;
-}
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0px;
+  text-transform: lowercase;
+  color: #fff;
+}*/
 
 /*-----------------------------------------------------------------------------------*/
 /*   Services
 /*-----------------------------------------------------------------------------------*/
 
-#services {
+/*#services {
   background: #f7f7f7;
   position: relative;
   padding-bottom: 80px;
@@ -416,7 +438,7 @@ nav ul li a:hover {
 
 .owl-nav {
   display: none;
-}
+}*/
 
 
 /*-----------------------------------------------------------------------------------*/
@@ -552,6 +574,7 @@ nav ul li a:hover {
 #contact {
   height: auto;
   width: 100%;
+  background-color: #FCCE50;
 }
 
 .contact-details {
@@ -564,42 +587,6 @@ nav ul li a:hover {
   padding-bottom: 10px;
 }
 
-#contact input, #contact textarea {
-  width: 100%;
-}
-
-
-#contact  #sendmessage {
-  color: #18d26e;
-  border: 1px solid #18d26e;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px;
-}
-
-#contact  #errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px;
-}
-
-#contact #sendmessage.show, #contact #errormessage.show, #contact .show {
-  display: block;
-}
-
-#contact .validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
 
 /*-----------------------------------------------------------------------------------*/
 /*  Footer

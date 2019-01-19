@@ -17,7 +17,15 @@
 /* main content */
 
 .main-content {
-  background: #f7f7f7;
+  background: #fff;
+  font-size: 20px;
+}
+
+.details{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 10px;
+    color: #E5A800;
 }
 
 .main-content .container-main {
