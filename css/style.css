@@ -106,6 +106,12 @@ h2 {
   font-weight: 600;
 }
 
+.aboutimg {
+    width:80%;
+    height: auto;
+    padding-top: 25%;
+}
+
 h4 {
   color: #292929;
   font-size: 14px;
@@ -282,7 +288,7 @@ nav {
   z-index: 1000;
   width: 100%;
   padding: 15px;
-  display: none;
+  display: block;
   /*-webkit-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.09);
   -moz-box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.09);
   box-shadow: 0px 2px 92px 0px rgba(0, 0, 0, 0.09);*/
@@ -384,7 +390,7 @@ nav ul li a:hover {
     color: #E5A800;
     margin-top: 30px;
     margin-bottom: 30px;
-    max-width: 60%;
+    max-width: 90%;
 }
 
 .header-content .list-social li {
