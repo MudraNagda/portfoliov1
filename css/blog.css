@@ -44,6 +44,13 @@
   width: 100%;
 }
 
+.container-main .block-main .content-main-1 {
+  background: #F9F9F9 none repeat scroll 0 0;  /*#081B79*/
+  display: inline-block;
+  width: 100%;
+}
+
+
 .journal-txt h4 a {
   display: block;
   font-size: 19px;
