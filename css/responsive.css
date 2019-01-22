@@ -4,6 +4,16 @@
 
 @media (min-width: 1200px) {
 
+    .heroimage {
+        width: 100vw;
+        height: auto;
+        display: block;
+    }
+
+    .heroimage-mob {
+        display: none;
+    }
+
 }
 
 /** Width between 992px to 1199px
@@ -11,6 +21,16 @@
  */
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
+    .heroimage {
+        width: 100vw;
+        height: auto;
+        display: block;
+    }
+
+    .heroimage-mob {
+        display: none;
+    }
 
 }
 
@@ -83,6 +103,16 @@
     float: none;
     display: inline-block;
   }
+
+  .heroimage-mob {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+
+  .heroimage {
+      display: none;
+  }
 }
 
 /** Width between 767px to 0
@@ -98,6 +128,10 @@
   #header {
       height: 150vh;
   }
+
+
+
+
 
   .aboutimg {
       width:30%;
@@ -165,6 +199,16 @@
     margin-left: 0;
     float: none;
     display: inline-block;
+  }
+
+  .heroimage-mob {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+
+  .heroimage {
+      display: none;
   }
 }
 
@@ -237,6 +281,18 @@
     float: none;
     display: inline-block;
   }
+
+  .heroimage-mob {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+
+  .heroimage {
+      display: none;
+  }
+
+
 }
 
 /** Width between 480px to 0
@@ -307,6 +363,17 @@
     float: none;
     display: inline-block;
   }
+
+  .heroimage-mob {
+    width: 100vw;
+    height: auto;
+    display: block;
+  }
+
+  .heroimage {
+      display: none;
+  }
+
 }
 
 /** Width between 320px to 0
@@ -382,4 +449,15 @@
     display: inline-block;
     margin-right: 0;
   }
+
+    .heroimage-mob {
+      width: 100vw;
+      height: auto;
+      display: block;
+    }
+
+    .heroimage {
+        display: none;
+    }
+
 }

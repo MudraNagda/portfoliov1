@@ -17,11 +17,6 @@ body {
   box-sizing: border-box;
 }
 
-.heroimage {
-    width: 100vw;
-    height: auto;
-}
-
 .title {
     font-size: 18px;
     font-weight: 500;
@@ -188,16 +183,17 @@ p {
   font-size: 16px;
   color: #000;
   line-height: 30px;
+
 }
 
 ::-moz-selection {
-  background: #b8a07e;
-  color: #fff;
+  background: #FFFAF2;
+  color: #FCCE50;
 }
 
 ::selection {
-  background: #b8a07e;
-  color: #fff;
+  background: #FFFAF2;
+  color: #FCCE50;
 }
 
 .btn {
