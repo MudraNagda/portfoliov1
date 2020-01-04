@@ -101,11 +101,25 @@ h2 {
   font-weight: 600;
 }
 
+
 .aboutimg {
     width:80%;
     height: auto;
     padding-top: 25%;
 }
+
+.aboutimgbig {
+    width:80%;
+    height: auto;
+    margin-top: 8vh;
+}
+
+.aboutimgbigintro {
+    width:80%;
+    height: auto;
+    margin-top: 2vh;
+}
+
 
 h4 {
   color: #292929;
