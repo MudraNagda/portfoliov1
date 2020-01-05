@@ -9,7 +9,7 @@
   <title>Mudra's Portfolio</title>
   <meta content="" name="keywords">
   <meta content="" name="description">
-  
+
   <!-- Global Site Tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138605773-1"></script>
   <script>
@@ -96,7 +96,7 @@
                     <div class = "row">
                         <div class = "col-md-8">
                             <p class = "title">USER RESEARCH</p>
-                            <p class="mb-30">My research consisted of interviews with IRCTC users that have different levels of usage. My interview process involved asking them to book a ticket with certain constraints while observing their behaviour, reactions and apparent pain points. After this, I also asked them how the experience was and what they wish they could change about the website. I classified the results into the following 3 personas.</p>
+                            <p class="mb-30">My research consisted of interviews with IRCTC users that have different levels of usage. I conducted Guerilla Usability Test in my college canteen. I asked 10 people to book a train from A to B, with certain constraints while observing their behaviour, reactions and apparent pain points. After this, I also asked them how the experience was and what they wish they could change about the website. I classified the results into the following 3 personas.</p>
                         </div>
                         <div class = "col-md-4">
                         </div>
@@ -133,7 +133,7 @@
                 <div class="content-main-1 single-post padDiv">
                     <div class = "row">
                       <div class = "col-md-12">
-                          <p class = "title" style = "color:#000;">AIMS</p>
+                          <p class = "title" style = "color:#000;">AIM</p>
                           <p class="mb-30" style = "color:#000;">
                               1. To ensure that the website caters to users that come from all kinds of usage levels - a frequent user, a moderate user and a user who has never used IRCTC before.<br><br>
                               2. To main the information architecture of the website, but to design it in a way that is understandable and not overwhelming for the user<br><br>
@@ -163,11 +163,76 @@
                 <div class="content-main single-post padDiv">
                     <div class = "row">
                         <div class = "col-md-12">
-                            <p class = "title">LOW FIDELITY PROTOTYPE</p>
-                            <p class="mb-30">Low fidelity prototypes were a crucial part of the design process. I used simple sketching to explain layout and arrangement.</p>
+                            <p class = "title">SOLUTION</p>
+                            <p class="mb-30">The website can be divided in sections. I'll address the problems and their respective solutions in these following sections. </p>
                         </div>
                     </div>
                     <div class = "row">
+                        <div class = "col-md-12">
+                            <p><b>1. Landing Page</b></p>
+                            <p>
+                                On the landing page, the original website design has 2 options:<br>
+                                - Book a train from Station A to B on a selected date<br>
+                                - Check PNR Status<br><br>
+                                During the research, the experienced users told me that they often had train names and train codes by heart, and found the process of adding the source and destination time consuming and wasteful. This is also true for another set of users of the website called Agents. Ticket Agents in India book tickets for you from the same platform. Another use case of this feature would be frequent travellers, on business trips, students coming back from college, etc. <br><br>
+                                So, I created an interface that can accommodate all these three features within in the same area on the website - simply because all these actions are mutually exclusive to each other. That is, if I am checking PNR, I don’t need the booking display on the interface.
+                            </p>
+                        </div>
+                    </div>
+                    <div class = "row">
+                        <div class = "col-md-6">
+                            <img class = "persona" style = "width: 100%; margin-left: auto; margin-right: auto; display: block;" src = "images/btrain.png">
+                        </div>
+                        <div class = "col-md-6">
+                            <img class = "persona" style = "height: 85vh; width: auto; margin-left: auto; margin-right: auto; display: block;" src = "images/train.gif">
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-md-12">
+                            <p>
+                                All users had one common reaction to the website - the amount of options and information was overwhelming, even for the more experienced users. Which is true, IRCTC is one of the most exhaustive and complex services in India. Which makes the job of web design extremely crucial, expecially when the country has a population of 1.3 billion. These users come from diverse areas based on education, culture, exposure to digital interfaces, economic backgrounds etc. <br><br>
+
+                                This means that the easiest way to make ‘bad design’ is to design according to your own assumptions. In order to avoid that, I refreshed my perspective while designing the UI - I told myself I know nothing about this service or this website and that I would be designing for people who no nothing about it too. <br><br>
+
+                                But during the usability study I learnt something new - there were many users who knew enough about the website and there were many who knew nothing about it. It was almost a 50-50. So, I realised that my assumption may have been well intended, and may have led me to make a good design but it wouldn’t have been great. So, I went into designing the UI by keeping 2 users in mind - one who wants to be informed, helped and prompted and one who needs speed and accuracy. <br><br>
+
+                                So the next thing I worked on is the navbar - navbars in my opinion are the most important. Easy and understandable navigation can save a user more than a few seconds. The older navbar had 2 rows on information, so I changed it to a single row only text navbar. It covered the same amount of links.
+                            </p>
+                            <img class = "persona" style = "width: 100%; margin-left: auto; margin-right: auto; display: block;" src = "images/tnav.png">
+                            <p>So the final landing page looked like this</p>
+                            <img class = "persona" style = "width: 100%; margin-left: auto; margin-right: auto; display: block;" src = "images/tlp.png">
+                        </div>
+                    </div>
+
+                    <div class = "row">
+                        <div class = "col-md-12">
+                            <p><b>2. Train List Display</b></p>
+                            <p>I started with the search header of the page, added required white space around the text fields and aligned them to the left, to create a visual partition between the data entry fields and the search button. I also added the field for quota, which is tucked away under the booking window. Having this option earlier is useful.
+                            </p>
+                            <img class = "persona" style = "width: 80%; margin-left: auto; margin-right: auto; display: block;" src = "images/train1.png">
+                            <p>
+                            The sidebar was to add options for search options such as class, arrival and departure time preference etc. There were redundant fields such as source and destination stations, which is already present in the top header.
+                            </p>
+                            <img class = "persona" style = "width:50%;margin-left: auto; margin-right: auto; display: block;" src = "images/train2.png">
+                            <p>
+                            With a consistent aim to reduce cognitive stress caused by the excess of information on this website, I created a colour-based, graphical slider for departure timing. Yellow denotes daytime and blue denotes nighttime. This is intuitive to everyone - no matter their background. This also comes after feedback from a user that they once hurriedly booked an AM train instead of a PM train.
+                            </p>
+                            <img class = "persona" style = "width: 50%; margin-left: auto; margin-right: auto; display: block;" src = "images/toggle.png">
+                            <p>This next section is the date display section. I added a legend here because there are multiple short forms that users aren’t aware of, and when they try, they cannot find the legend. (I checked, it was deep down in the sidebar). Most importantly, users usually check for tickets on their desired date and then if there aren’t any available, they jump to dates around their desired date. The old interface only allowed users to flip through one date at a time. I changed this interface to create a week’s view of dates and their days.<br><br>Here we can also see a random Quota field, which belongs to the search section.
+                            </p>
+                            <img class = "persona" style = "width: 80%; margin-left: auto; margin-right: auto; display: block;" src = "images/train3.png">
+                            <p>The most important section of the train search is the list of trains it returns as a result. In this section, I referred to the Eurorail website. Eurorail is used by tourists while visiting Europe, and most of the bookings are made online. Considering this use case, I assume that their interface would make a good reference point.
+                            </p>
+                            <img class = "persona" style = "width: 80%; margin-left: auto; margin-right: auto; display: block;" src = "images/eurorail.png">
+                            <p>One of the most interesting insights from the user study was that 70% of the users thought that a cloud button implied the train plied in the monsoons, whereas in reality, it meant night time. This comes from a strong cultural bias for monsoons in India. We have seasonal rainfall and most of the population is extra cautious during this period. So, I decided to do away with the icons altogether, since there was already too much information in that section.
+                            </p>
+                            <img class = "persona" style = "width: 80%; margin-left: auto; margin-right: auto; display: block;" src = "images/train4.png">
+                            <p>The final redesign of the section looks like this</p>
+                            <img class = "persona" style = "width: 8s0%; margin-left: auto; margin-right: auto; display: block;" src = "images/train0.png">
+                        </div>
+                    </div>
+                    <!-- <div class = "row">
                         <div class = "col-md-12">
                             <p class = "title">HIGH FIDELITY PROTOTYPE</p>
                             <p class="mb-30">Here are the before and after images of the current website design and my redesign<br>
@@ -226,7 +291,7 @@
                         <div class = "col-md-6">
 
                         </div>
-                    </div>
+                    </div> -->
                 </div>
               </div>
             </div>
