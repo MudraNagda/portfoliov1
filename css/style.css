@@ -597,6 +597,49 @@ nav ul li a:hover {
   height: 40%;
 }
 
+
+
+
+
+.portfolio-thumbnail1 {
+  margin-bottom: 30px;
+  overflow: hidden;
+  min-height: 260px;
+}
+
+.portfolio-thumbnail1 img {
+  max-width: 100%;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.portfolio-thumbnail1:hover img {
+  /* -webkit-transform: scale(1.08);
+  transform: scale(1.08); */
+  opacity: 0.3;
+}
+
+
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* background-color: #fff; */
+
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  /* transition: .3s ease; */
+}
+
+.portfolio-thumbnail1:hover .overlay1 {
+  height: 100%;
+}
+
+
+
+
 .cardtext{
     font-size: 20px;
     font-weight: 600;
@@ -610,7 +653,18 @@ nav ul li a:hover {
     transform: translate(-50%, -50%);
 }
 
-
+.cardtext1{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
 
 
